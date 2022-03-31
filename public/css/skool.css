@@ -1,0 +1,25 @@
+.sidebar-left-icon {
+    color: #fff;
+    padding: 4px 7px;
+    border-radius: 4px;
+    margin-left: -5px;
+    margin-right: 5px;
+}
+
+.main-menu .fa {
+    position: relative;
+    width: 28px !important;
+    margin-right: 15px;
+}
+
+.main-header .logo{
+	height: 55px !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu{
+	width: 190px !important;
+}
+
+.sidebar-menu>li>.treeview-menu {
+    margin-left: 40px;
+}

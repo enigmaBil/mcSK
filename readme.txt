@@ -1,0 +1,43 @@
+// 28/08/2020 11:03 Rene add the following columns in the table 'student' frontend
+
+ALTER TABLE `student`   ADD COLUMN `student_email` VARCHAR(80) NULL DEFAULT NULL AFTER `first_name`;
+ALTER TABLE `student`   ADD COLUMN `student_residence` VARCHAR(191) NULL DEFAULT NULL AFTER `student_email`;
+ALTER TABLE `student`   ADD COLUMN `region_of_origin` VARCHAR(80) NULL DEFAULT NULL AFTER `student_residence`;
+ALTER TABLE `student`   ADD COLUMN `department_of_origin` VARCHAR(80) NULL DEFAULT NULL AFTER `region_of_origin`;
+ALTER TABLE `student`   ADD COLUMN `present_diploma` VARCHAR(50) NULL DEFAULT NULL AFTER `department_of_origin`;
+ALTER TABLE `student`	ADD COLUMN `previous_school` VARCHAR(500) NULL DEFAULT NULL AFTER `present_diploma`;
+ALTER TABLE `student`	ADD COLUMN `first_language` VARCHAR(50) NULL DEFAULT NULL AFTER `previous_school`;
+ALTER TABLE `student`	ADD COLUMN `professional_activity` VARCHAR(50) NULL DEFAULT NULL AFTER `first_language`;
+ALTER TABLE `student`	ADD COLUMN `marital_status` VARCHAR(25) NULL DEFAULT NULL AFTER `professional_activity`;
+ALTER TABLE `student`	ADD COLUMN `diploma_year_obtained` DATE NULL DEFAULT NULL AFTER `marital_status`;
+ALTER TABLE `student`	ADD COLUMN `release_year_prev_school` DATE NULL DEFAULT NULL AFTER `diploma_year_obtained`;
+ALTER TABLE `student`	ADD COLUMN `second_language` VARCHAR(25) NULL DEFAULT NULL AFTER `release_year_prev_school`;
+ALTER TABLE `student`	ADD COLUMN `country_obtained_diploma` VARCHAR(25) NULL DEFAULT NULL AFTER `second_language`;
+ALTER TABLE `student`	ADD COLUMN `diploma_obtained` VARCHAR(50) NULL DEFAULT NULL AFTER `country_obtained_diploma`;
+ALTER TABLE `student`	ADD COLUMN `other_languages` VARCHAR(25) NULL DEFAULT NULL AFTER `diploma_obtained`;
+ALTER TABLE `student`	ADD COLUMN `relationship_with_teacher` VARCHAR(50) NULL DEFAULT NULL AFTER `other_languages`;
+ALTER TABLE `student`	DROP COLUMN `entrance_diploma`,	DROP COLUMN `entrance_diploma_year`,	DROP COLUMN `diploma_average`;
+ALTER TABLE `student`	ADD COLUMN `tutor_town` VARCHAR(25) NULL DEFAULT NULL AFTER `tutor_name`;
+ALTER TABLE `student`	ADD COLUMN `tutor_professional_activity` VARCHAR(50) NULL DEFAULT NULL AFTER `tutor_town`;
+ALTER TABLE `student`	ADD COLUMN `tutor_phone_1` VARCHAR(25) NULL DEFAULT NULL AFTER `tutor_professional_activity`;
+ALTER TABLE `student`   ADD COLUMN `tutor_phone_2` VARCHAR(25) NULL DEFAULT NULL AFTER `tutor_phone_1`;
+ALTER TABLE `student`	DROP COLUMN `tutor_contact`,	DROP COLUMN `tutor_occupation`;
+ALTER TABLE `student`	ADD COLUMN `father_name` VARCHAR(191) NULL DEFAULT NULL AFTER `tutor_phone_2`;
+ALTER TABLE `student`	ADD COLUMN `father_town` VARCHAR(25) NULL DEFAULT NULL AFTER `father_name`;
+ALTER TABLE `student`	ADD COLUMN `father_profession` VARCHAR(200) NULL DEFAULT NULL AFTER `father_town`;
+ALTER TABLE `student`	ADD COLUMN `father_address` VARCHAR(50) NULL DEFAULT NULL AFTER `father_profession`;
+ALTER TABLE `student`	ADD COLUMN `father_phone_1` VARCHAR(25) NULL DEFAULT NULL AFTER `father_address`;
+ALTER TABLE `student`	ADD COLUMN `father_phone_2` VARCHAR(25) NULL DEFAULT NULL AFTER `father_phone_1`;
+ALTER TABLE `student`	ADD COLUMN `mother_name` VARCHAR(200) NULL DEFAULT NULL AFTER `father_phone_2`;
+ALTER TABLE `student`	ADD COLUMN `mother_town` VARCHAR(50) NULL DEFAULT NULL AFTER `mother_name`;
+ALTER TABLE `student`	ADD COLUMN `mother_profession` VARCHAR(200) NULL DEFAULT NULL AFTER `mother_town`;
+ALTER TABLE `student`	ADD COLUMN `mother_address` VARCHAR(50) NULL DEFAULT NULL AFTER `mother_profession`;
+ALTER TABLE `student`	ADD COLUMN `mother_phone_1` VARCHAR(25) NULL DEFAULT NULL AFTER `mother_address`;
+ALTER TABLE `student`	ADD COLUMN `mother_phone_2` VARCHAR(25) NULL DEFAULT NULL AFTER `mother_phone_1`;
+ALTER TABLE `student`	DROP COLUMN `adress`;
+ALTER TABLE `student`	CHANGE COLUMN `birth_date` `birth_date` DATE NULL DEFAULT NULL AFTER `sex`;
+ALTER TABLE `student`	CHANGE COLUMN `diploma_year_obtained` `diploma_year_obtained` INT NULL DEFAULT NULL AFTER `marital_status`,	CHANGE COLUMN `release_year_prev_school` `release_year_prev_school` INT NULL DEFAULT NULL AFTER `diploma_year_obtained`;
+ALTER TABLE `payment`	ADD COLUMN `payment_reason` INT NULL AFTER `status`;
+ALTER TABLE `payment`	CHANGE COLUMN `slice_id` `slice_id` INT(11) UNSIGNED NULL AFTER `inscription_id`;
+ALTER TABLE `student`   ADD COLUMN `inscription_id` INT(11) NULL DEFAULT NULL AFTER `chosen_discipline`;
+ALTER TABLE `student`   ADD CONSTRAINT `FK_student_inscription_id` FOREIGN KEY (`inscription_id`) REFERENCES inscription(`id`)

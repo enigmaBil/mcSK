@@ -1,0 +1,51 @@
+<?php
+
+return [
+     
+
+
+];
+
+/****'department'=> 'Department',
+     'addDepartment' =>'Add a Department',
+     'new' => 'New',
+     'name' =>'Name',
+     'scolarity' =>'Scolarity',
+     'cancel' =>'Cancel',
+     'status' =>'Status',
+     'actions' =>'Actions',
+     'next' =>'Next',
+     'previous' =>'Previous',
+     'disciplineCode'=>'Discipline Code',
+     'addDiscipline'=>'Add a Discipline',
+     'description'=>'Description',
+     'teacher'=>'Teacher',
+     'code'=>'Code',
+     'studyLevel'=>'Study Level',
+     'speciality'=>'Speciality',
+     'content'=>'Content',
+     'salary'=>'Salary',
+     'adress'=>'Adress',
+     'contact'=>'Contact',
+     'sex'=>'Sex',
+     'addTeacher'=>'Add a teacher',
+     'course'=>'Course',
+     'departmentList'=>'Department List',
+     'disciplineList'=>'Discipline List',
+     'teacherList'=>'Teacher List',
+     'user'=>'User',
+     'userList'=>'User List',
+     'role'=>'role',
+     'addUser'=>'Add a User',
+     'superAdmin'=>'Super Administrator',
+     'administrator'=>'Administrator',
+     'parent'=>'Parent',
+     'username'=>'Username',
+     'email'=>'Email',
+     'password'=>'Password',
+     'discipline'=>'Discipline',
+     'amount_hour'=>'Amount hours',
+     'coefficient'=>'Coefficient',
+     'session'=>'Sesion',
+     'module'=>'Module',
+     'level'=>'Level', */

@@ -1,0 +1,3 @@
+le serveur doit:
+ajouter status avec pour valeur par defaut 0 dans la table sequence
+le serveur doit recupérer la table notes_rattrapage chez carole ou sophie 

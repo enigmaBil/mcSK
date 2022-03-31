@@ -1,0 +1,76 @@
+
+.date-to {
+    padding-left: 3px;
+}
+.date-from: {
+    padding-right: 3px;
+}
+.new-asset {
+    border: solid 2px #d2d6de;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.new-asset > div {
+    width: 100%;
+    padding-left: 15px;
+}
+.choose-invoice {
+    display: block;
+    position: relative;
+}
+.choose-invoice > div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    align-content: stretch;
+}
+.choose-invoice > div > div {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-grow: 6000;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding: 0 15px;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    vertical-align: bottom;
+}
+.choose-invoice > div > div > div {
+    width: 100%;
+}
+.choose-invoice > div > div:last-child {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-items: flex-end;
+}
+.from-stratch {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+.dropdown-menu form {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    border: none;
+}
+.dropdown-menu form button {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+{
+    "A fresh verification link has been sent to your email address.') }}\r\n                        <\/div>\r\n                    @endif\r\n\r\n                    {{ __(": "",
+    "button.new": "Boutton.Nouveau",
+    "click here to request another": "cliquer ici pour demander à nouveau",
+    "Confirm Password": "Confirmez votre mot de passe",
+    "E-Mail Address": "Adresse mail",
+    "If you did not receive the email": "si vous n'avez pas reçue d'email",
+    "label.courseList": "Liste des cours ",
+    "menu.inscription": "Inscription",
+    "menu.payment": "Payement",
+    "menu.report": "Rapport",
+    "Name": "Nom",
+    "Password": "mot de passe ",
+    "Register": "s'enregistrer",
+    "Reset Password": "nouveau mot de pase",
+    "Send Password Reset Link": "envoyé un lien pour votre nouveau mot de passe",
+    "Verify Your Email Address": "verifier votre adresse email"
+}

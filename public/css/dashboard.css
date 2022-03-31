@@ -1,0 +1,353 @@
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    color: #333333;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 
+    			0 3px 1px -2px rgba(0, 0, 0, 0.2), 
+    			0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #eeeeee;
+    border-radius: 0.25rem;
+}
+
+.card-stats .card-header.card-header-icon, 
+.card-stats .card-header.card-header-text {
+    text-align: right;
+}
+
+.card [class*="card-header-"] {
+    margin: 0px 15px 0;
+    padding: 0;
+    position: relative;
+}
+
+.card .card-header {
+    z-index: 3 !important;
+}
+
+.card [class*="card-header-"], .card[class*="bg-"] {
+    color: #fff;
+}
+
+.card .card-header {
+    border-bottom: none;
+    background: transparent;
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card [class*="card-header-"] .card-icon, 
+.card [class*="card-header-"] .card-text {
+    border-radius: 3px;
+    background-color: #999999;
+    padding: 15px;
+    margin-top: -20px;
+    margin-right: 15px;
+    float: left;
+}
+
+.card .card-header-warning .card-icon, 
+.card .card-header-warning:not(.card-header-icon):not(.card-header-text), 
+.card .card-header-warning .card-text {
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 
+    			0 7px 10px -5px rgba(255, 152, 0, 0.4);
+}
+
+.card .card-header-warning .card-icon, 
+.card .card-header-warning .card-text, 
+.card .card-header-warning:not(.card-header-icon):not(.card-header-text), 
+.card.bg-warning, 
+.card.card-rotate.bg-warning .front, 
+.card.card-rotate.bg-warning .back {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.card .card-header-success .card-icon, 
+.card .card-header-success .card-text, 
+.card .card-header-success:not(.card-header-icon):not(.card-header-text), 
+.card.bg-success, 
+.card.card-rotate.bg-success .front, 
+.card.card-rotate.bg-success .back {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+.card .card-header-info .card-icon, 
+.card .card-header-info .card-text, 
+.card .card-header-info:not(.card-header-icon):not(.card-header-text), 
+.card.bg-info, 
+.card.card-rotate.bg-info .front, 
+.card.card-rotate.bg-info .back {
+    background: linear-gradient(60deg, #26c6da, #00acc1);
+}
+
+.card .card-header-danger .card-icon, 
+.card .card-header-danger .card-text, 
+.card .card-header-danger:not(.card-header-icon):not(.card-header-text), 
+.card.bg-danger, 
+.card.card-rotate.bg-danger .front, 
+.card.card-rotate.bg-danger .back {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+}
+
+.card-stats .card-header.card-header-icon i {
+    font-size: 36px;
+    line-height: 56px;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+}
+
+.card-stats .card-header .card-category:not([class*="text-"]) {
+    color: #999999;
+    font-size: 16px;
+}
+
+.card-stats .card-header .card-icon+.card-title, 
+.card-stats .card-header .card-icon+.card-category {
+    padding-top: 10px;
+}
+
+.card .card-header.card-header-icon .card-title, 
+.card .card-header.card-header-text .card-title {
+    margin-top: 15px;
+    color: #3C4858;
+    font-weight: bold;
+}
+
+.card-stats .card-header+.card-footer {
+    border-top: 1px solid #eee;
+    margin-top: 0;
+}
+
+.card .card-body+.card-footer, 
+.card .card-footer {
+    padding: 0;
+    padding-top: 10px;
+    margin: 0 0 10px;
+    border-radius: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .card-footer {
+    display: flex;
+    background-color: transparent;
+    border: 0;
+}
+
+.card .card-body+.card-footer .stats, 
+.card .card-footer .stats {
+    color: #999999;
+    font-size: 12px;
+    line-height: 22px;
+}
+.card-details-bottom{
+    font-weight: bold;
+    font-size: 13px;
+}
+/*********** End card header *****************/
+
+
+
+/*********** Begin progress bar *****************/
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel-default .panel-heading {
+    background: #fff;
+    border-bottom: 1px solid #e9ecf2;
+    color: #444444;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    border-color: #ddd;
+}
+
+.panel-heading {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    min-height: 60px;
+    line-height: 38px;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+.progress {
+    height: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    background-color: #f2f3f2;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    float: left;
+    /* width: 0; */
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    /* background-color: #30a5ff; */
+    /* box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1); */
+    /* -webkit-transition: width .6s ease; */
+    transition: width .6s ease;
+}
+
+.progress-bar-warning, .progress-bar-orange {
+    background-color: #ffb53e;
+    background-image: none;
+}
+
+.progress-bar-teal {
+    background-color: #1ebfae;
+    background-image: none;
+}
+
+.progress-bar-danger, .progress-bar-red {
+    background-color: #f9243f;
+    background-image: none;
+}
+.dropdown-settings {
+    border: 1px solid #fff;
+    width: 220px;
+    font-size: 0.9em;
+    padding: 0;
+}
+
+.dropdown-settings li {
+    list-style: none;
+    padding: 0 10px;
+    width: 220px;
+    height: 26px;
+    line-height: 26px;
+}
+/*********** End progress bar *****************/
+
+/*********** Begin design check functionnality *****/
+
+
+.checkbox_funct input {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox_funct label {
+  position: relative;
+  display: block;
+  background: #f8f8f8;
+  border: 1px solid #f0f0f0;
+  border-radius: 2em;
+  padding: .5em 1em .5em 5em;
+  box-shadow: 0 1px 2px rgba(100, 100, 100, 0.5) inset, 0 0 10px rgba(100, 100, 100, 0.1) inset;
+  cursor: pointer;
+  text-shadow: 0 2px 2px #fff;
+  width: 100%;
+}
+.checkbox_funct label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: .7em;
+  width: 3em;
+  height: 1.2em;
+  border-radius: .6em;
+  background: #eee;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  box-shadow: 0 1px 3px rgba(100, 100, 100, 0.5) inset, 0 0 10px rgba(100, 100, 100, 0.2) inset;
+}
+.checkbox_funct label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: .5em;
+  width: 1.4em;
+  height: 1.4em;
+  border: .25em solid #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #ddd;
+  background-image: linear-gradient(to top, #fff 0%, #fff 40%, transparent 100%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+.checkbox_funct label, .checkbox_funct label::before, .checkbox_funct label::after {
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.checkbox_funct label:hover, .checkbox_funct input:focus + label {
+  color: black;
+}
+.checkbox_funct label:hover::after, .checkbox_funct input:focus + label::after {
+  background-color: #ccc;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.checkbox_funct input:checked + label::before {
+  background: #5cb85c;
+}
+.checkbox_funct input:checked + label::after {
+  -webkit-transform: translateX(2em) translateY(-50%);
+          transform: translateX(2em) translateY(-50%);
+}
+
+.checkbox_funct{
+    min-height: 190px;
+}
+
+
+/*********** Begin design check functionnality *****/
+
+
+.table-condensed>tbody>tr>td{
+    padding: 7px 5px;
+}
+
+.bg-mc-gray{
+    background-color: #e0e0e0;
+    height: 160px;
+    cursor: pointer;
+}
+
+.new-funct .icon{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 75px;
+    height: 75px;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
